@@ -1,7 +1,8 @@
 const app = Vue.createApp({
     data(){
         return{
-             userInput: ''  
+             userInput: '',
+             confirmedInput: '', 
         }
     },
     methods: {
@@ -9,7 +10,10 @@ const app = Vue.createApp({
              alert("Welcome to Vue Event-Binding 1 !");
         },
         onKeydown(event){
-             this.userInput = event.target.value ;
+            this.userInput = event.target.value ;
+        },
+        onConfirm(event){
+            this.confirmedInput = event.target.value ;
         }
     }
 })
