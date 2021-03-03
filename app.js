@@ -7,6 +7,9 @@ const app = Vue.createApp({
     methods: {
         showAlert(){
              alert("Welcome to Vue Event-Binding 1 !");
+        },
+        onKeydown(event){
+             this.userInput = event.target.value ;
         }
     }
 })
